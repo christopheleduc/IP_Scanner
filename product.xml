@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Product
+  xmlns="http://schemas.microsoft.com/developer/2004/01/bootstrapper"
+  ProductCode="CryptoDox.IP_Scanner">
+
+  <RelatedProducts>
+    <DependsOnProduct Code="Microsoft.Windows.Installer.3.1" />
+  </RelatedProducts>
+
+  <PackageFiles>
+    <PackageFile Name="IP_Scanner-1.0.0-amd64.msi"/>
+  </PackageFiles>
+
+  <InstallChecks>
+    <MsiProductCheck Product="IsMsiInstalled"
+      Property="{4147c223-0043-405f-9629-c3fe5e2f735e}"/>
+  </InstallChecks>
+
+  <Commands>
+    <Command PackageFile="IP_Scanner-1.0.0-amd64.msi" Arguments= '/quiet /norestart'>
+
+      <InstallConditions>
+        <BypassIf Property="IsMsiInstalled"
+          Compare="ValueGreaterThan" Value="0"/>
+        <!-- Block install on Windows 95 -->
+        <FailIf Property="Version9X" Compare="VersionLessThan" Value="4.10" String="InvalidPlatformWin9x"/>
+      </InstallConditions>
+
+      <ExitCodes>
+        <ExitCode Value="0" Result="Success"/>
+        <ExitCode Value="1641" Result="SuccessReboot"/>
+        <ExitCode Value="3010" Result="SuccessReboot"/>
+        <DefaultExitCode Result="Fail" String="GeneralFailure"/>
+      </ExitCodes>
+    </Command>
+  </Commands>
+</Product>

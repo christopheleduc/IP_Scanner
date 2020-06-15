@@ -1,0 +1,5 @@
+/build
+/dist
+/Tiers
+encode64.py
+*.code-workspace

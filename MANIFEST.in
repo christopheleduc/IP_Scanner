@@ -1,0 +1,3 @@
+include *.md *.ico *.png LICENCE IP_Scanner.exe.manifest Package.appxmanifest
+recursive-include doc *.jpg *.mht
+recursive-include media *.png *.ico
