@@ -1,5 +1,6 @@
 /build
 /dist
 /Tiers
+/*/__pycache__
 encode64.py
 *.code-workspace

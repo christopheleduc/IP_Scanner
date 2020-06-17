@@ -1,0 +1,23 @@
+*********************************************************************************************
+********************************** Librairies à installer  **********************************
+*********************************************************************************************
+
+# IP Scanner utilise la librairie Scapy ! Pour l'installer sous Python:
+$ pip install scapy
+
+# Sous Windows vous aurez aussi besoin de Npcap disponible ici:
+# https://nmap.org/npcap/
+# J'ai utilisé cette version : npcap-0.9988.exe
+
+# Pour le packaging MSI et Stand Alone
+# ATTENTION le setup est configuré pour Windows! A adapter selon les besoins...
+
+$ python -m pip install cx_Freeze
+
+# Pour générer la version Stand Alone:
+
+$ python setup.py build
+
+# Pour générer le binaire MSI:
+
+$ python setup.py bdist_msi
