@@ -37,26 +37,26 @@ Il s'agit d'une application Python 3. Cette version est configuré pour produire
 $ pip install scapy
 
 * Scapy sources :
-* &#160;[Git development version.](https://github.com/secdev/scapy)
-* &#160;[Documentation.](https://scapy.readthedocs.io/en/latest/index.html)
-
+* &#160;&#160;[Git development version.](https://github.com/secdev/scapy)
+* &#160;&#160;[Documentation.](https://scapy.readthedocs.io/en/latest/index.html)
+&nbsp;
 * Npcap:
-* [Sous Windows vous aurez aussi besoin de Npcap disponible ici.](https://nmap.org/npcap/)
-
+* &#160;&#160;[Sous Windows vous aurez aussi besoin de Npcap disponible ici.](https://nmap.org/npcap/)
+&nbsp;
 * Aide:
-* [L'aide est disponible ici !](/doc/Notice_IP_Scanner.mht)
-
+* &#160;&#160;[L'aide est disponible ici !](/doc/Notice_IP_Scanner.mht)
+&nbsp;
 * Packaging:
-* Pour créer le Package MSI ou la version Stand Alone, vous avez besoin de la librairie "cx_Freeze".
-* ATTENTION le setup est configuré pour Windows! A adapter selon les besoins...
+* &#160;&#160;Pour créer le Package MSI ou la version Stand Alone, vous avez besoin de la librairie "cx_Freeze".
+* &#160;&#160;ATTENTION le setup est configuré pour Windows! A adapter selon les besoins...
 
 $ python -m pip install cx_Freeze
 
-* Pour générer la version Stand Alone:
+* &#160;&#160;Pour générer la version Stand Alone:
 
 $ python setup.py build
 
-* Pour générer le binaire MSI:
+* &#160;&#160;Pour générer le binaire MSI:
 
 $ python setup.py bdist_msi
 
