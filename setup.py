@@ -75,7 +75,7 @@ if sys.platform == "win32":
 
 # if 'bdist_msi' in sys.argv:
 #     prgm_path = os.environ.get("PROGRAMFILES")
-#     destination = os.path.join(prgm_path,'Ip_compliance')
+#     destination = os.path.join(prgm_path,'Ip_scanner')
 #     sys.argv += ['--initial-target-dir', destination]
 
 #############################################################################
